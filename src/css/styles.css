@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #E5E5E5;
+}
+/*clases generales*/
+.titleSection{
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0;
+}
+/*Boton Flotante*/
+.icon-nav {
+    position: fixed;
+	width: 40px;
+    bottom: 7px;
+	right: 7px;
+    transition: 0.10s linear 0s;
+    filter: grayscale();
+    padding: 1em;
+}
+   .icon-nav:hover {
+     transform: scale(1.1)  
+}
+/*Navbar*/
+header{
+    width: 100%;
+    position: fixed;/*Comprobar segun la version de los navegadores*/
+    top: 0;
+    z-index: 9999;
+}
+#navbar{
+    height: 5vh;
+    background: rgba(209, 209, 209, 0.315);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+}
+#logo{
+    padding-left: 2rem;
+}
+#logo a{
+    text-decoration: none;
+}
+#logo h1{
+    letter-spacing: 5px;
+    color: #000000;
+}
+.navigation{
+    margin-right: 2rem;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.sectionNav{
+    display: block;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem 1rem;
+    color: #000000;
+    font-size: 1.3rem;
+}
+.menuLateral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    margin: 0 1rem;
+}
+
+.iconNavL{
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size:20px;
+    color: #000000;
+}
+.sectionNav:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.iconNavL:hover{
+    color: goldenrod;
+}
+
+/*-----------------Responsivo*/
+#buttonNavResp{
+    display: none;
+}
+.navigationResp{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgb(22, 22, 22);
+    height: 100vh;
+    width: 40vw;
+}
+.buttonClose{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 4rem;
+    line-height: 4rem;
+    text-decoration: none;
+    border: 0;
+    padding-right: 1.25rem;
+    text-align: right;
+    vertical-align: middle;
+
+    color: white;
+    background: rgb(22, 22, 22);
+    outline:none;
+
+}
+
+.openMenuResp{
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 600ms ease;
+}
+.closeMenuResp{
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 600ms ease;
+}
+.navigationResp{
+    padding: 2.5rem 1.75rem;
+}
+.navigationResp ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}  
+.navigationResp ul li{
+    padding:0;
+}
+.navigationResp ul li:first-child a{
+   border-top: 0!important;
+}
+.navigationResp ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(124, 124, 124);
+
+    display: block;
+    line-height: 3.5rem;
+
+    border: 0;
+    border-top: solid 1px rgba(255, 255, 255, 0.125);
+}
+.navigationResp ul li a:hover{
+     color: whitesmoke;
+}
+
+/*Banner*/
+#banner{
+    width: 100%;
+    height: 100vh;
+}
+.imagBanner{
+    width: 100%;
+    height: 100%;
+}
+/*Galeria*/
+.proyects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.proyects h1{
+    margin: 5rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 75%;
+    gap: 2rem;
+    margin:auto;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.galeria img{
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.galeria>a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.galeria>a:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+.close{
+    background: black;
+    color: white;
+}
+.imageG{
+    width: 300px;
+    height: 300px;
+}
+/* formulario */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.container form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    min-width: 250px;
+}
+.containerData{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.containerData input{
+    height: 2rem;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left: 5px;
+    outline: none;
+    transition: all 0.18s ease;
+}
+
+.containerData textarea {
+    height: 190px;
+    width: 98%;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    resize: none;
+    padding: 5px;
+    outline: none;
+    transition: all 0.18s ease;
+}
+
+.containerData textarea:hover,
+.containerData input:hover,
+.containerData textarea:focus,
+.containerData input:focus {
+    box-shadow: 0 0 1pt 1.3pt #000000;
+}
+
+.containerData label{
+    font-weight: bold;
+}
+.contact :nth-child(3) input{
+    height: 6rem;
+}
+.btnEnviar{
+    border: 0;
+    margin: 2rem;
+    display: block;
+    padding: .5rem 4rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 30vh;
+}
+#redSocials{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#redSocials :nth-child(2){
+    margin:0 30px;
+}
+.imgRedS{
+    width: 40px;
+}
+
+ul.icons {
+    list-style: none;
+}
+ul.icons li{
+    display: inline-block;
+}
+.containerIcons{
+    margin-bottom: 2rem;
+}
+.copyright{
+    opacity: 0.5;
+}
+
+@media only screen and (min-width:1500px){
+    .navigationResp{
+        width: 20vw;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navigation{
+        display: none;
+    }
+    #buttonNavResp{
+        display: block;
+    }
+    #banner{
+        width: 100%;
+        height: 40vh;
+    }  
+    .galeria{
+        grid-template-columns: auto;
+    }
+    .proyects{
+        margin-bottom: 0;
+    }
+
+}

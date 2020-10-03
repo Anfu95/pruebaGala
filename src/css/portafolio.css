@@ -1,0 +1,107 @@
+/*Galeria*/
+.portafolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 3rem;
+}
+.port-parrafo{
+    text-align: center;
+}
+.portafolio h1{
+    width: 100%;
+    margin: 6rem 0 2rem 0;
+}
+#infoP{
+    width: 100%;
+    text-align: center;
+}
+#infoP p{
+    padding: 0 7em 0 7em;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.galeriaP{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin:auto;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.galeriaP img{
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.galeriaP>a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.galeriaP>a:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+/*filter*/
+#containerFilter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem 0;
+    height: 6vh;
+}
+#filter{
+    height: 100%;
+    width: 100%;
+    background: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+.filterS{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.filterS a{
+    text-decoration: none;
+    color:#000;
+}
+.filterS a:hover{   
+    color:#fff;
+}
+.filterS a:focus{
+    color:white;
+}
+@media only screen and (max-width: 980px) {
+    #infoP p {
+        padding: 0 2em 0 2em;
+    }
+}
+@media only screen and (max-width: 767px){
+    .portafolio{
+        margin: auto;
+    }
+    .portafolio h1{
+        text-align: center;
+    }
+    #infoP p{
+        width: auto;
+        padding: 2rem
+    }
+    .galeriaP{
+        width: 80%;
+        grid-template-columns: auto;
+    }
+
+}

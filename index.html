@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link href="./node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <title>Gala</title>
+</head>
+
+<body>
+    <header>
+        <!--Botón flotante-->
+        <section>
+            <a href="#banner"><img class="icon-nav" src="img/icons/flecha-hacia-arriba.png"></a>
+        </section>
+        
+
+        <!--Navbar-->
+        <section id="navbar">
+            <div id="logo">
+                <a href="#banner">
+                    <h1>Gala</h1>
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a class="sectionNav" href="#proyects">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="sectionNav" href="#contact">Contacto</a>
+                    </li>
+                    <li>
+                        <i id="btnNavL" class="fas fa-bars iconNavL"></i>
+                    </li>
+                </ul>
+            </nav>
+            <div id="buttonNavResp">
+                <i id="btnNavL" class="fas fa-bars iconNavL"></i>
+            </div>
+            <nav id="nP" class="navigationResp closeMenuResp">
+                <ul>
+                    <li>
+                        <a href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <button id="bC" class="buttonClose">X</button>
+            </nav>
+        </section>
+    </header>
+    <section id="banner">
+        <img src="img/bnnnnn.png" alt="" class="imagBanner">
+    </section>
+    <section id="proyects" class="proyects">
+        <h1>Proyectos</h1>
+        <div class="galeria">
+            <a class="example-image-link" href="./img/1.jpg" data-lightbox="example-1">
+                <img class="example-image" src="./img/1.jpg" alt="image-1" />
+                <div class="overlay">
+                    <h2>Suscribete</h2>
+                </div>
+            </a>
+            <a class="example-image-link" href="./img/2.jpg" data-lightbox="example-1">
+                <img class="example-image" src="./img/2.jpg" alt="image-2" />
+                <div class="overlay">
+                    <h2>Suscribete</h2>
+                </div>
+            </a>
+            <a class="example-image-link" href="./img/3.jpg" data-lightbox="example-1">
+                <img class="example-image" src="./img/3.jpg" alt="image-3" />
+                <div class="overlay">
+                    <h2>Suscribete</h2>
+                </div>
+            </a>
+            <a class="example-image-link" href="./img/4.jpg" data-lightbox="example-1">
+                <img class="example-image" src="./img/4.jpg" alt="image-4" />
+                <div class="overlay">
+                    <h2>Suscribete</h2>
+                </div>
+            </a>
+            <a class="example-image-link" href="./img/5.jpg" data-lightbox="example-1">
+                <img class="example-image" src="./img/5.jpg" alt="image-5" />
+                <div class="overlay">
+                    <h2>Suscribete</h2>
+                </div>
+            </a>
+            <a class="example-image-link" href="./img/6.jpg" data-lightbox="example-1">
+                <img class="example-image" src="./img/6.jpg" alt="image-6" />
+                <div class="overlay">
+                    <h2>Suscribete</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h1 class="titleSection">Contacto</h1>
+        <form class="contact" action="enviar.php" method="POST">
+            <div class="containerData">
+                <label>Nombre completo:</label>
+                <input placeholder="Ingrese su nombre completo." type="text" name="name" id="name">
+            </div>
+            <div class="containerData">
+                <label>Correo:</label>
+                <input placeholder="Ejemplo@gmail.com" type="text" name="mail" id="mail">
+            </div>
+            <div class="containerData">
+                <label>¿Qué necesita?</label>
+                <textarea placeholder="Ingrese lo que necesite detalladamente..." type="text"></textarea>
+            </div>
+            <input class="btnEnviar" type="submit">
+        </form>
+    </section>
+    <footer>
+        <div id="redSocials">
+            <div class="containerIcons">
+                <ul class="icons">
+                    <li><a title="Facebook" target="_blank" href="#"><img class="imgRedS" src="./img/icons/001-facebook.png" alt="Facebook"></a></li>
+                    <li><a title="Whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=529991073891"><img class="imgRedS"
+                                src="./img/icons/003-whatsapp.png" alt="Whatsapp"></a></li>
+                    <li><a title="Instagram" target="_blank" href="#"><img class="imgRedS" src="./img/icons/011-instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Gala. All rights reserved.
+            </div>
+            <!--<a href="#"><img class="imgRedS" src="./img/icons/001-facebook.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=529991073891"><img class="imgRedS" src="./img/icons/003-whatsapp.png" alt=""></a>
+            <a href="#"><img class="imgRedS" src="./img/icons/011-instagram.png" alt=""></a>-->
+        </div>
+    </footer>
+
+    <script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="./src/js/navBar.js"></script>
+    <script>
+        lightbox.option({
+            'alwaysShowNavOnTouchDevices': true
+        })
+    </script>
+</body>
+
+</html>

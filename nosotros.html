@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/nosotros.css">
+    <title>Gala</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <a href="#nosotros"><img class="icon-nav" src="img/icons/flecha-hacia-arriba.png"></a>
+        </section>
+        
+        <section id="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <h1>Gala</h1>
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a class="sectionNav" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="sectionNav" href="#servicio">Servicio</a>
+                    </li>
+                    <li>
+                        <a class="sectionNav" href="#contact">Contacto</a>
+                    </li>
+                    <li>
+                        <i id="btnNavL" class="fas fa-bars iconNavL"></i>
+                    </li>
+                </ul>
+            </nav>
+            <div id="buttonNavResp">
+                <i id="btnNavL" class="fas fa-bars iconNavL"></i>
+            </div>
+            <nav id="nP" class="navigationResp closeMenuResp">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <button id="bC" class="buttonClose">X</button>
+            </nav>
+        </section>
+    </header>
+    <section id="nosotros">
+        <h1 class="titleSection">Nosotros</h1>
+        <div class="containerNosotros">
+            <figure><img src="img/1.jpg" alt=""></figure>
+            <div class="info">
+                <h2>fundador</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit placeat quae fuga hic tenetur
+                    architecto, ipsam natus nostrum vitae sapiente nihil voluptatibus. Illo placeat sunt, sed adipisci
+                    minus sit.Rerum earum quisquam eius dignissimos at accusamus aspernatur deleniti sequi iure, et,
+                    tenetur sint suscipit ratione, autem explicabo mollitia accusantium temporibus voluptatem deserunt?
+                    Animi illum, dolor inventore modi veritatis explicabo.</p>
+            </div>
+        </div>
+        <div class="containerNosotros c2">
+            <div class="info">
+                <h2>fundador</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit placeat quae fuga hic tenetur
+                    architecto, ipsam natus nostrum vitae sapiente nihil voluptatibus. Illo placeat sunt, sed adipisci
+                    minus sit.Rerum earum quisquam eius dignissimos at accusamus aspernatur deleniti sequi iure, et,
+                    tenetur sint suscipit ratione, autem explicabo mollitia accusantium temporibus voluptatem deserunt?
+                    Animi illum, dolor inventore modi veritatis explicabo.</p>
+            </div>
+            <figure><img src="img/1.jpg" alt=""></figure>
+        </div>
+        <div class="containerNosotrosR">
+            <figure><img src="img/1.jpg" alt=""></figure>
+            <div class="info">
+                <h2>fundador</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit placeat quae fuga hic tenetur
+                    architecto, ipsam natus nostrum vitae sapiente nihil voluptatibus. Illo placeat sunt, sed adipisci
+                    minus sit.Rerum earum quisquam eius dignissimos at accusamus aspernatur deleniti sequi iure, et,
+                    tenetur sint suscipit ratione, autem explicabo mollitia accusantium temporibus voluptatem deserunt?
+                    Animi illum, dolor inventore modi veritatis explicabo.</p>
+            </div>
+        </div>
+    </section>
+    <section id="servicio">
+        <h1 class="titleSection">Servicios</h1>
+        <div class="containerServicio">
+            <div class="card">
+                <figure class="cardImage">
+                    <img src="img/icons/casa.png" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>Card numero 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, doloremque officia. Nobis</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="cardImage">
+                    <img src="img/icons/casa2.png" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>Card numero 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, doloremque officia. Nobis</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="cardImage">
+                    <img src="img/icons/casa3.png" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>Card numero 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, doloremque officia. Nobis</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h1 class="titleSection">Contacto</h1>
+        <form class="contact" action="">
+            <div class="containerData">
+                <label>Nombre:</label>
+                <input placeholder="Ingrese su nombre completo." type="text">
+            </div>
+            <div class="containerData">
+                <label>Correo:</label>
+                <input placeholder="Ejemplo@gmail.com" type="text">
+            </div>
+            <div class="containerData">
+                <label>¿Qué necesita?</label>
+                <textarea placeholder="Ingrese lo que necesite detalladamente..." type="text"></textarea>
+            </div>
+            <input class="btnEnviar" type="submit">
+        </form>
+    </section>
+    <footer>
+        <div id="redSocials">
+            <div class="containerIcons">
+                <ul class="icons">
+                    <li><a title="Facebook" target="_blank" href="#"><img class="imgRedS" src="./img/icons/001-facebook.png" alt="Facebook"></a></li>
+                    <li><a title="Whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=529991073891"><img class="imgRedS"
+                                src="./img/icons/003-whatsapp.png" alt="Whatsapp"></a></li>
+                    <li><a title="Instagram" target="_blank" href="#"><img class="imgRedS" src="./img/icons/011-instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Gala. All rights reserved.
+            </div>
+            <!--<a href="#"><img class="imgRedS" src="./img/icons/001-facebook.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=529991073891"><img class="imgRedS" src="./img/icons/003-whatsapp.png" alt=""></a>
+            <a href="#"><img class="imgRedS" src="./img/icons/011-instagram.png" alt=""></a>-->
+        </div>
+    </footer>
+    <script src="./src/js/navBar.js"></script>
+</body>
+
+</html>
